@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Fish Creek Animal Hospital Contact</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="fishcreek.css">
+		<!--<link rel="stylesheet" type="text/css" href="fishcreekmobile.css">
+		<meta name=”viewport” content=”width=device-width” initial-scale=”1.0”>-->
+	</head>
+
+	<body>
+	<div id="wrapper">	
+		<div class="logo">
+			<h1 id="header"><a id="plain" href="index.html">
+				Fish Creek Animal Hospital</a></h1>
+		</div>
+
+		<div id="leftcolumn">
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="askvet.html">Ask the Vet</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="shop.html">Shop</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="rightcolumn">
+			<div class="content">
+				<h2>Contact Fish Creek</h2>
+				<!--<p>Required fields are marked with an asterisk (*).</p>-->
+				<form name=" contact" method="post" action="contactform.php" 
+					onsubmit="return validateForm();">
+					<label for="myName">*Name: </label> <input type="text" name="Name" id="myName"> <!--required>-->
+					<label for="myEmail">*E-mail: </label> <input type="email" name="Email" id="myEmail"> <!--required>-->
+					<label for="myComments">*Comments: </label> 
+						<textarea rows="4" cols="30" name="Comments" id="myComment"></textarea>  <!--(put inside textarea tag: required>-->
+					<input id="mySubmit" type="submit" value="Send Now">
+				</form>
+			</div>
+			
+			<div id="footer">
+				<div class="nav" id="main">
+					<a href="index.html"><u>Home</u></a>&nbsp;&nbsp;
+					<a href="services.html"><u>Services</u></a>&nbsp;&nbsp;
+					<a href="askvet.html"><u>Ask the Vet</u></a>&nbsp;&nbsp;
+					<a href="contact.html"><u>Contact</u></a>&nbsp;&nbsp;
+					<a href="shop.html"><u>Shop</u></a>
+				</div>
+				<p>Copyright(c) 2013 Fish Creek Animal Hospital</p>				
+				<a href="mailto:JCcalonge@gmail.com">JCcalonge@gmail.com</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function validateForm()
+		{
+			if(document.forms[0].myName.value == "")
+			{
+				alert("Please enter a name.");
+				return false;
+			}
+			else if(document.forms[0].myEmail.value == "")
+			{
+				alert("Please enter an e-mail address.");
+				return false;
+			}
+			else if(document.forms[0].myComment.value == "")
+			{
+				alert("Please enter a comment.");
+				return false;
+			}
+			else
+				return true;
+		}
+	</script>
+	</body>
+</html>

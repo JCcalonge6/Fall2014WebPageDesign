@@ -1,0 +1,111 @@
+body
+{
+	background-image:none;
+	margin:0px;
+	padding:0px;
+}
+
+img{border-style:none;}
+
+h3,li,dt
+{
+	font-weight:bold;
+	color:#003366;
+	text-shadow: none;
+}
+
+#header
+{
+	font-family:"Verdana";
+	background-color:#000066;
+	background-image: url(lilfish.gif);
+	text-align:center;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:300px 40px;
+	color:#FFFFFF;
+	font-size:2em;
+	line-height:120%;
+	text-shadow: 1px 1px 1px #CCCCCC;
+	padding:0.2em;
+}
+
+.navigation{background-color:#FFFFFF;}
+
+li,dt{font-size:1.1em;}
+
+p,dd{color:#000066;}
+
+.nav
+{
+	display:none;
+}
+
+.content
+{
+	font-size:1.2em;
+	padding-left:10px;
+}
+
+#wrapper 
+{
+	background-color:#FFFFFF;
+	width:100%;
+	min-width:0px;
+	margin-right:0px;
+	margin-left:0px;
+}
+
+#info{margin-left:5%;}
+
+#footer
+{
+	font-size:0.7em;
+	font-style:italic;
+	padding:0px;
+	margin:0px;
+}
+
+#leftcolumn
+{
+	float:none;
+	width:100%;
+	padding-top:0px;
+	margin-top:0px;
+}
+
+#leftcolumn ul
+{
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+
+#leftcolumn a
+{
+	display:block;
+	padding: 0.2em;
+	font-size:1.3em;
+	text-decoration:none;
+}
+
+#leftcolumn a:link{color:#3262A3;}
+
+#leftcolumn a:visited{color:#6699FF;}
+
+#leftcolumn a:hover{color:#CCCCCC;}
+
+#rightcolumn
+{
+	background-color:#FFFFFF;
+	font-size:90%;
+	margin:0px;
+	padding-left:0.4em;
+	padding-right:0px;
+	padding-bottom:0px;
+	padding-top:0px;
+}
+
+#mobile{display: inline;}
+
+#desktop{display:none;}
